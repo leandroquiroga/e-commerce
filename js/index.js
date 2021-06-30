@@ -75,7 +75,6 @@ const calcularDescuentoCupon = (subTotal, cupon) => {
 	} else if (cupon === "DESCUENTO10%") {
 		return subTotal * 0.1
 	}
-
 	return 0
 }
 
@@ -106,7 +105,6 @@ const valorPositivo = (valor) => {
 }
 
 //obtiene la informacion de los items
-
 const obtenerYActulizar = () => {
     const itemsDOM = obtenerItemsDOM();
     const info = [];
@@ -128,7 +126,6 @@ const obtenerYActulizar = () => {
         });
     })
     return info;
-
 }
 
 //obtiene el precio del DOM
@@ -190,5 +187,4 @@ const init = () => {
     actualizarNombre();
     actualizarPrecio();
 }   
-
 init();
