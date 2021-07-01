@@ -109,8 +109,6 @@ const obtenerYActulizar = () => {
     const itemsDOM = obtenerItemsDOM();
     const info = [];
 
-
-
     itemsDOM.forEach((itemDOM) => {
         const item = items.find((item) => item.id === itemDOM.id);
         const cantidad = obtenerCantidadDOM(itemDOM.id)
@@ -129,7 +127,6 @@ const obtenerYActulizar = () => {
 }
 
 //obtiene el precio del DOM
-
 const actualizarElementoPrecioDom = (id, precio) =>{
     const elemento = obtenerElementoDOM(id);
     elemento.innerHTML = precioFormateado(configuracion.moneda, precio)
@@ -150,7 +147,6 @@ const actualizarNombre = () => {
     const nameComplete = obtenerNombre(usuario);
     actualizarElementoDOM("nombre", nameComplete);
 }
-
 // actualizar precio
 const actualizarPrecio = () => {
     const items = obtenerYActulizar();
